@@ -7,8 +7,12 @@
   <div class="collapse navbar-collapse" id="productNavbarNavAltMarkup">
     <div class="navbar-nav">
       <a [routerLink]="['./main']" class="nav-item nav-link">Main</a>
-      <a [routerLink]="['./more-info']" class="nav-item nav-link">More Info</a> |
-      Enter Id: <input #id size="6">
+      <a [routerLink]="['./more-info']" class="nav-item nav-link">More Info</a>
+      <span class="nav-item nav-link"> |
+      </span>
+      <span class="nav-item nav-link">
+        Enter Id: <input #id size="6">
+      </span>
       <button (click)="goToProduct(id.value)">Go</button>
     </div>
   </div>
