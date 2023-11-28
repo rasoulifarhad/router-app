@@ -1,12 +1,18 @@
-<h2>Products</h2>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Products</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#productNavbarNavAltMarkup" aria-controls="productNavbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<div class="navLinks">
-  <a [routerLink]="['./main']">Main</a>
-  <a [routerLink]="['./more-info']">More Info</a> |
-  Enter Id: <input #id size="6">
-  <button (click)="goToProduct(id.value)">Go</button>
-</div>
-
+  <div class="collapse navbar-collapse" id="productNavbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a [routerLink]="['./main']" class="nav-item nav-link">Main</a>
+      <a [routerLink]="['./more-info']" class="nav-item nav-link">More Info</a> |
+      Enter Id: <input #id size="6">
+      <button (click)="goToProduct(id.value)">Go</button>
+    </div>
+  </div>
+</nav>
 <div class="products-area">
   <router-outlet></router-outlet>
 </div>
