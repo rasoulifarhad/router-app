@@ -12,6 +12,7 @@ import { Routes } from '@angular/router';
 import { loggedInGuard } from './logged-in.guard';
 import { routes as childRoutes, ProductsModule } from './products/products.module';
 import { ProductsComponent } from './products/products.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -47,7 +48,8 @@ const routes: Routes = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ProductsModule
+    ProductsModule,
+    NgbModule
 
   ],
   providers: [],
